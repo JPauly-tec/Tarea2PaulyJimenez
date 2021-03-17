@@ -141,7 +141,7 @@ int main()
     pthread_join(S3, NULL);
     pthread_join(S4, NULL);
     //para el cronometro, define duracion
-//y lo imprime
+     //y lo imprime
     auto stopMulti = high_resolution_clock::now();
     auto durationMulti = duration_cast<microseconds>(stopMulti - startMulti);
     std::cout << "El tiempo de calculo MultiThread fue de:" << durationMulti.count() << " micro segundos." << endl;
